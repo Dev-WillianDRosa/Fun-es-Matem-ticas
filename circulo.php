@@ -42,14 +42,14 @@
             display: block;
             position: absolute;
             top: 265px;
-            left: 54.7em;
+            left: 40em;
             width: 8em; 
         }
         .imagem2 {
             display: block;
             position: absolute;
             top: 307px;
-            left: 56.9em;
+            left: 42em;
             width: 6em; 
         }
         .voltar {

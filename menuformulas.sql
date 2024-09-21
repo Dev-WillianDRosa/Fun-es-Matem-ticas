@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1
--- http://www.phpmyadmin.net
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 24-Jun-2024 às 11:22
--- Versão do servidor: 5.7.11
--- PHP Version: 5.6.18
+-- Tempo de geração: 21/09/2024 às 02:50
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `menuformulas`
+-- Banco de dados: `menuformulas`
 --
 CREATE DATABASE IF NOT EXISTS `menuformulas` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `menuformulas`;
@@ -25,7 +26,7 @@ USE `menuformulas`;
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `formulas`
+-- Estrutura para tabela `formulas`
 --
 
 DROP TABLE IF EXISTS `formulas`;
@@ -33,10 +34,10 @@ CREATE TABLE IF NOT EXISTS `formulas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome_da_formula` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=159 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Extraindo dados da tabela `formulas`
+-- Despejando dados para a tabela `formulas`
 --
 
 INSERT INTO `formulas` (`id`, `nome_da_formula`) VALUES
@@ -97,7 +98,131 @@ INSERT INTO `formulas` (`id`, `nome_da_formula`) VALUES
 (55, 'triangulo'),
 (56, 'circulo'),
 (57, 'progressaogeometrica'),
-(58, 'progressaoaritmetica');
+(58, 'progressaoaritmetica'),
+(59, 'amortizacao'),
+(60, 'funcaoquadratica'),
+(61, 'juros'),
+(62, 'pitagoras'),
+(63, 'retangulo'),
+(64, 'retangulo'),
+(65, 'progressaoaritmetica'),
+(66, 'progressaogeometrica'),
+(67, 'triangulo'),
+(68, 'potencia'),
+(69, 'quadrado'),
+(70, 'circulo'),
+(71, 'retangulo'),
+(72, 'triangulo'),
+(73, 'potencia'),
+(74, 'funcaoquadratica'),
+(75, 'juros'),
+(76, 'amortizacao'),
+(77, 'pitagoras'),
+(78, 'progressaoaritmetica'),
+(79, 'progressaogeometrica'),
+(80, 'progressaoaritmetica'),
+(81, 'progressaogeometrica'),
+(82, 'quadrado'),
+(83, 'triangulo'),
+(84, 'quadrado'),
+(85, 'circulo'),
+(86, 'retangulo'),
+(87, 'triangulo'),
+(88, 'potencia'),
+(89, 'funcaoquadratica'),
+(90, 'funcaoquadratica'),
+(91, 'juros'),
+(92, 'amortizacao'),
+(93, 'pitagoras'),
+(94, 'progressaoaritmetica'),
+(95, 'progressaogeometrica'),
+(96, 'circulo'),
+(97, 'quadrado'),
+(98, 'circulo'),
+(99, 'retangulo'),
+(100, 'triangulo'),
+(101, 'potencia'),
+(102, 'funcaoquadratica'),
+(103, 'juros'),
+(104, 'amortizacao'),
+(105, 'pitagoras'),
+(106, 'progressaoaritmetica'),
+(107, 'progressaogeometrica'),
+(108, 'quadrado'),
+(109, 'funcaoquadratica'),
+(110, 'pitagoras'),
+(111, 'progressaoaritmetica'),
+(112, 'progressaogeometrica'),
+(113, 'funcaoquadratica'),
+(114, 'juros'),
+(115, 'pitagoras'),
+(116, 'amortizacao'),
+(117, 'circulo'),
+(118, 'retangulo'),
+(119, 'funcaoquadratica'),
+(120, 'pitagoras'),
+(121, 'potencia'),
+(122, 'progressaoaritmetica'),
+(123, 'progressaogeometrica'),
+(124, 'quadrado'),
+(125, 'circulo'),
+(126, 'triangulo'),
+(127, 'quadrado'),
+(128, 'potencia'),
+(129, 'quadrado'),
+(130, 'circulo'),
+(131, 'triangulo'),
+(132, 'funcaoquadratica'),
+(133, 'pitagoras'),
+(134, 'circulo'),
+(135, 'circulo'),
+(136, 'retangulo'),
+(137, 'retangulo'),
+(138, 'pitagoras'),
+(139, 'funcaoquadratica'),
+(140, 'potencia'),
+(141, 'pitagoras'),
+(142, 'retangulo'),
+(143, 'circulo'),
+(144, 'juros'),
+(145, 'quadrado'),
+(146, 'pitagoras'),
+(147, 'progressaogeometrica'),
+(148, 'quadrado'),
+(149, 'circulo'),
+(150, 'retangulo'),
+(151, 'triangulo'),
+(152, 'potencia'),
+(153, 'funcaoquadratica'),
+(154, 'amortizacao'),
+(155, 'amortizacao'),
+(156, 'pitagoras'),
+(157, 'progressaoaritmetica'),
+(158, 'progressaogeometrica');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(110) NOT NULL,
+  `email` varchar(110) NOT NULL,
+  `senha` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
+(1, 'Khalia', 'khalia735@gmail.com', 'Khalia'),
+(2, 'teste', 'teste', 'teste');
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

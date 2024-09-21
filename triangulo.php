@@ -40,29 +40,29 @@
         }
         .imagem1{
             position: absolute;
-            top : 24.1em;
-            left : 52.4em;
+            top : 24.6em;
+            left : 37.4em;
             width: 122px;
             height: 35px;
         }
         .imagem2{
             position: absolute;
-            top : 428.9px;
-            left : 51.5em;
+            top : 436.9px;
+            left : 36.4em;
             width: 220px;
             height: 26px;
         }
         .imagem3{
             position: absolute;
-            top : 460.9px;
-            left : 52em;
+            top : 467.9px;
+            left : 36.8em;
             width: 220px;
             height: 26px;
         }
         .imagem4{
             position: absolute;
-            top : 498.9px;
-            left : 51em;
+            top : 502.9px;
+            left : 35.8em;
             width: 220px;
             height: 26px;
         }  .limpar {
